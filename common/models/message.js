@@ -7,7 +7,7 @@ module.exports = function(Message) {
   Message.greet = function(msg, cb) {
     process.nextTick(function() {
       msg = msg || 'hello';
-      cb(null, 'lexpediteur dit ' + msg + ' a lutilisateur');
+      cb(null, 'lexpediteur ou concepteur dit ' + msg + ' a lutilisateur');
     });
   };
 };
