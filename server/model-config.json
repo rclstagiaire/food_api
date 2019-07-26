@@ -53,5 +53,13 @@
   "restaurants": {
     "dataSource": "food_api",
     "public": true
+  },
+  "customer": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "munuItem": {
+    "dataSource": "food_api",
+    "public": true
   }
 }
