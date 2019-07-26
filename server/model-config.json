@@ -37,5 +37,21 @@
   },
   "Message": {
     "dataSource": null
+  },
+  "notification": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "delivers": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "orders": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "ligne_commande": {
+    "dataSource": "food_api",
+    "public": true
   }
 }

@@ -2,5 +2,21 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "food": {
+    "name": "food",
+    "localStorage": "",
+    "file": "",
+    "connector": "memory"
+  },
+  "food_api": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "food-api",
+    "password": "postgre",
+    "name": "food_api",
+    "user": "postgres",
+    "connector": "postgresql"
   }
 }
