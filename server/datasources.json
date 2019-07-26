@@ -3,12 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "food": {
-    "name": "food",
-    "localStorage": "",
-    "file": "",
-    "connector": "memory"
-  },
   "food_api": {
     "host": "localhost",
     "port": 5432,
