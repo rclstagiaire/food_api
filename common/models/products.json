@@ -21,7 +21,28 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "categories": {
+      "type": "belongsTo ",
+      "model": "categories",
+      "foreignkey": ""
+    },
+    "menus": {
+      "type": "belongsTo",
+      "model": "menus",
+      "foreignKey": ""
+    },
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignKey": ""
+    },
+    "menuItem": {
+      "type": "belongsTo",
+      "model": "menuItem",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

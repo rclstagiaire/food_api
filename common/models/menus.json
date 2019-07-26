@@ -23,7 +23,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignKey": ""
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "products",
+      "foreignKey": ""
+    },
+    "menuItem": {
+      "type": "belongsTo",
+      "model": "menuItem",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

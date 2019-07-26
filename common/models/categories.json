@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignkey": ""
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "products",
+      "foreignkey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
