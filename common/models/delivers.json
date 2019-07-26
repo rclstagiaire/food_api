@@ -30,6 +30,10 @@
     "avaibility": {
       "type": "string",
       "required": true
+    },
+    "deliversPosition": {
+      "type": "geopoint",
+      "required": true
     }
   },
   "validations": [],

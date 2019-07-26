@@ -18,6 +18,10 @@
     "email": {
       "type": "string",
       "required": true
+    },
+    "customerPosition": {
+      "type": "geopoint",
+      "required": true
     }
   },
   "validations": [],
