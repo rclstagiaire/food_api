@@ -47,7 +47,7 @@
     "dataSource": "food_api",
     "public": true
   },
-  "ligne_commande": {
+  
     "categories": {
       "dataSource": "food_api",
       "public": true
@@ -68,10 +68,13 @@
       "dataSource": "food_api",
       "public": true
     },
-    "menuItem": {
+    "menu_item": {
       "dataSource": "food_api",
       "public": true
-    }
+    },
+    "ligne_commande": {
+      "dataSource": "food_api",
+      "public": true
   },
   "payment_mode": {
     "dataSource": "food_api",

@@ -64,7 +64,25 @@
     },
     "avaibility": {
       "type": "string",
-      "required": true
+      "required": false,
+      "postgresql": {
+        "columnName": "avaibility",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "delivers_position": {
+      "type": "geopoint",
+      "required": false,
+      "postgresql": {
+        "columnName": "delivers_position",
+        "dataType": "POINT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     }
   },
   "validations": [],

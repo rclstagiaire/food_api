@@ -1,14 +1,39 @@
 {
-  "name": "menuItem",
-  "plural": "menuItem",
+  "name": "menu_item",
+  "plural": "menu_item",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+    "properties": {
+      "id_menu_item": {
+        "type": "number",
+        "id": true,
+        "generated": true,
+        "postgresql": {
+          "columnName": "id_menu_item",
+          "dataType": "bigint",
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "NO"
+        }
+      }
+  
+    },
+    "relations": {
+      "products": {
+        "type": "belongsTo",
+        "model": "products",
+        "foreignKey": ""
+      },
+      "menus": {
+        "type": "belongsTo",
+        "model": "menus",
+        "foreignKey": ""
+      }
+  },
   "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -7,23 +7,81 @@
     "validateUpsert": true
   },
   "properties": {
+    "id_menus": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_menus",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "postgresql": {
+        "columnName": "description",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     },
     "price": {
       "type": "number",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "price",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "image": {
-      "type": "string"
+      "type": "string",
+      "postgresql": {
+        "columnName": "image",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignKey": ""
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "products",
+      "foreignKey": ""
+    },
+    "menu_item": {
+      "type": "hasMany",
+      "model": "menu_item",
+      "foreignKey": ""
+    }
+    
+  },
   "acls": [],
   "methods": {}
 }

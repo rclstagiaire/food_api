@@ -30,7 +30,6 @@
         "nullable": "NO"
       }
     },
-    
     "lastname": {
       "type": "string",
       "required": true,
@@ -48,6 +47,17 @@
       "postgresql": {
         "columnName": "email",
         "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "customer_position": {
+      "type": "geopoint",
+      "required": false,
+      "postgresql": {
+        "columnName": "customer_position",
+        "dataType": "POINT",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"

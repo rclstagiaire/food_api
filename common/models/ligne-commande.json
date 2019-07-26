@@ -7,12 +7,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "id_ligne-commande": {
+    "id_ligne_commande": {
       "type": "number",
       "id": true,
       "generated": true,
       "postgresql": {
-        "columnName": "id_ligne-commande",
+        "columnName": "id_ligne_commande",
         "dataType": "bigint",
         "dataPrecision": null,
         "dataScale": null,
@@ -22,9 +22,9 @@
   },
   "validations": [],
   "relations": {
-    "product": {
+    "products": {
       "type": "belongsTo",
-      "model": "product",
+      "model": "products",
       "foreignkey": ""
     },
     "orders": {
