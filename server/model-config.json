@@ -14,28 +14,44 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "food_api"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "food_api",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "food_api",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "food_api",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "food_api",
     "public": false
   },
   "Message": {
     "dataSource": null
+  },
+  "categories": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "menus": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "products": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "restaurants": {
+    "dataSource": "food_api",
+    "public": true
   }
 }
