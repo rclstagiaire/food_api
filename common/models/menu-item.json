@@ -1,5 +1,5 @@
 {
-  "name": "munuItem",
+  "name": "menuItem",
   "plural": "menuItem",
   "base": "PersistedModel",
   "idInjection": true,

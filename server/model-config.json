@@ -58,7 +58,7 @@
     "dataSource": "food_api",
     "public": true
   },
-  "munuItem": {
+  "menuItem": {
     "dataSource": "food_api",
     "public": true
   }
