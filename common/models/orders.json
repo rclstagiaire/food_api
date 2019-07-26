@@ -7,28 +7,71 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
+    "id_orders": {
       "type": "number",
-      "required": true
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_orders",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "amount": {
       "type": "number",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "amount",
+        "dataType": "integer",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "reference": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "reference",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "date": {
       "type": "date",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "date",
+        "dataType": "DATE",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "note": {
-      "type": "number"
+      "type": "number",
+      "postgresql": {
+        "columnName": "note",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     },
     "delivery_type": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "delivery_type",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],
@@ -36,17 +79,22 @@
     "delivers": {
       "type": "belongsTo",
       "model": "delivers",
-      "foreignkey": "iddelivers"
+      "foreignkey": ""
     },
     "restaurant": {
       "type": "belongsTo",
       "model": "restaurant",
-      "foreignkey": "idrestaurant"
+      "foreignkey": ""
     },
     "payment_mode": {
       "type": "belongsTo",
       "model": "payment-mode",
-      "foreignkey": "idpayment_mode"
+      "foreignkey": ""
+    },
+    "ligne_commande": {
+      "type": "hasmany",
+      "model": "ligne_commande",
+      "foreignkey": ""
     }
   },
   "acls": [],

@@ -7,13 +7,28 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
+    "id_payment-mode": {
       "type": "number",
-      "required": true
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_payment-mode",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],
@@ -21,7 +36,7 @@
     "orders": {
       "type": "belongsTo",
       "model": "orders",
-      "foreignkey": "idpayment_mode"
+      "foreignkey": ""
     }
   },
   "acls": [],

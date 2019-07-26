@@ -21,7 +21,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "payment_mode": {
+      "type": "hasmany",
+      "model": "payment-mode",
+      "foreignkey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

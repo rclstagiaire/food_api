@@ -7,17 +7,51 @@
     "validateUpsert": true
   },
   "properties": {
+    "id_customer": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_customer",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
     "firstname": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "firsname",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
+    
     "lastname": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "lastname",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "email": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "email",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],

@@ -6,18 +6,31 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "id_ligne-commande": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_ligne-commande",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    }
+  },
   "validations": [],
   "relations": {
     "product": {
       "type": "belongsTo",
       "model": "product",
-      "foreignkey": "idproduct"
+      "foreignkey": ""
     },
     "orders": {
       "type": "belongsTo",
       "model": "orders",
-      "foreignkey": "idorders"
+      "foreignkey": ""
     }
   },
   "acls": [],
