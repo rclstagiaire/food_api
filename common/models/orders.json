@@ -32,7 +32,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "delivers": {
+      "type": "belongsTo",
+      "model": "delivers",
+      "foreignkey": "iddelivers"
+    },
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "restaurant",
+      "foreignkey": "idrestaurant"
+    },
+    "payment_mode": {
+      "type": "belongsTo",
+      "model": "payment-mode",
+      "foreignkey": "idpayment_mode"
+    }
+  },
   "acls": [],
   "methods": {}
 }

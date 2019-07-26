@@ -1,24 +1,17 @@
 {
-  "name": "restaurants",
-  "plural": "restaurants",
+  "name": "payment_mode",
+  "plural": "payment_mode",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
     "name": {
-      "type": "string",
-      "required": true
-    },
-    "availability": {
-      "type": "date"
-    },
-    "position": {
-      "type": "geopoint",
-      "required": true
-    },
-    "image": {
       "type": "string",
       "required": true
     }
@@ -26,9 +19,9 @@
   "validations": [],
   "relations": {
     "orders": {
-      "type": "hasMany",
+      "type": "belongsTo",
       "model": "orders",
-      "foreignkey": "idrestaurant"
+      "foreignkey": "idpayment_mode"
     }
   },
   "acls": [],

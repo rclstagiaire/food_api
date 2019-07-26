@@ -29,7 +29,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "orders": {
+      "type": "belongsTo",
+      "model": "orders",
+      "foreignkey": "idorders"
+    }
+  },
   "acls": [],
   "methods": {}
 }
