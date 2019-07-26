@@ -1,0 +1,14 @@
+{
+  "name": "ligne_commande",
+  "plural": "ligne_commande",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
