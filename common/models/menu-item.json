@@ -6,9 +6,34 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "id_menu_item": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_menu_item",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    }
+
+  },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "products": {
+      "type": "belongsTo",
+      "model": "products",
+      "foreignKey": ""
+    },
+    "menu": {
+      "type": "belongsTo",
+      "model": "menu",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

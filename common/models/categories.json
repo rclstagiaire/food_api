@@ -7,16 +7,50 @@
     "validateUpsert": true
   },
   "properties": {
+    "id_categories": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_categories",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "postgresql": {
+        "columnName": "description",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     },
     "image": {
       "type": "string",
-      "required": false
+      "required": false,
+      "postgresql": {
+        "columnName": "image",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     }
   },
   "validations": [],

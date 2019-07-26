@@ -7,17 +7,51 @@
     "validateUpsert": true
   },
   "properties": {
+    "id_products": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_products",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "price": {
       "type": "number",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "price",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "image": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "image",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],
@@ -38,10 +72,11 @@
       "foreignKey": ""
     },
     "menuItem": {
-      "type": "belongsTo",
+      "type": "hasMany",
       "model": "menuItem",
       "foreignKey": ""
     }
+    
   },
   "acls": [],
   "methods": {}

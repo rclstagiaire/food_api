@@ -7,20 +7,61 @@
     "validateUpsert": true
   },
   "properties": {
+    "id_restaurants": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_restaurants",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "availability": {
-      "type": "date"
+      "type": "date",
+      "postgresql": {
+        "columnName": "availability",
+        "dataType": "DATE",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     },
     "position": {
       "type": "geopoint",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "position",
+        "dataType": "POINT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     },
     "image": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "image",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],
