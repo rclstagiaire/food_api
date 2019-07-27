@@ -21,6 +21,7 @@
       }
   
     },
+    "validations": [],
     "relations": {
       "products": {
         "type": "belongsTo",
@@ -33,7 +34,7 @@
         "foreignKey": ""
       }
   },
-  "validations": [],
+  
   "acls": [],
   "methods": {}
 }
