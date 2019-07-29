@@ -88,12 +88,17 @@
     },
     "payment_mode": {
       "type": "belongsTo",
-      "model": "payment-mode",
+      "model": "payment_mode",
       "foreignkey": ""
     },
     "ligne_commande": {
       "type": "hasmany",
       "model": "ligne_commande",
+      "foreignkey": ""
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "customer",
       "foreignkey": ""
     }
   },
