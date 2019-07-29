@@ -81,9 +81,9 @@
       "model": "delivers",
       "foreignkey": ""
     },
-    "restaurant": {
+    "restaurants": {
       "type": "belongsTo",
-      "model": "restaurant",
+      "model": "restaurants",
       "foreignkey": ""
     },
     "payment_mode": {
