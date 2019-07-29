@@ -95,6 +95,16 @@
       "type": "hasmany",
       "model": "ligne_commande",
       "foreignkey": ""
+    },
+    "notification": {
+      "type": "hasMany",
+      "model": "notification",
+      "foreignkey": ""
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "customer",
+      "foreignkey": ""
     }
   },
   "acls": [],

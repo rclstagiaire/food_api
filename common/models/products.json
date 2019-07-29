@@ -57,7 +57,7 @@
   "validations": [],
   "relations": {
     "ligne_commande": {
-      "type": "hasmany",
+      "type": "hasMany",
       "model": "ligne_commande",
       "foreignkey": ""
     },
