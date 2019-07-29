@@ -6,13 +6,18 @@ var lbTables = [
   'ACL',
   'RoleMapping',
   'Role',
-  'rolemembre',
-  'utilisateur',
   'categories',
   'menus',
   'products',
   'restaurants',
-  'menuItem'
+  'menu_item',
+  'notification',
+  'delivers',
+  'orders',
+  'customer',
+  'ligne_commande',
+  'payment_mode'
+
 ];
 ds.autoupdate(lbTables, function(er) {
   if (er) throw er;
