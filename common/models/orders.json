@@ -96,14 +96,11 @@
       "model": "ligne_commande",
       "foreignkey": ""
     },
-<<<<<<< HEAD
-=======
     "notification": {
       "type": "hasMany",
       "model": "notification",
       "foreignkey": ""
     },
->>>>>>> 27c9cb7152c3ef307f9006d89aa5c794365e3936
     "customer": {
       "type": "belongsTo",
       "model": "customer",

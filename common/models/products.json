@@ -76,6 +76,11 @@
       "type": "hasMany",
       "model": "menu_item",
       "foreignKey": ""
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "products",
+      "foreignKey": ""
     }
     
   },
