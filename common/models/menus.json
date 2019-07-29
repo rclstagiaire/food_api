@@ -70,8 +70,7 @@
       "model": "restaurants",
       "foreignKey": ""
     },
-    
-    "menu_item": {
+     "menu_item": {
       "type": "hasMany",
       "model": "menu_item",
       "foreignKey": ""
