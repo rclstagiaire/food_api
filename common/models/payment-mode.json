@@ -12,7 +12,7 @@
       "id": true,
       "generated": true,
       "postgresql": {
-        "columnName": "id_payment-mode",
+        "columnName": "id_payment_mode",
         "dataType": "bigint",
         "dataPrecision": null,
         "dataScale": null,
