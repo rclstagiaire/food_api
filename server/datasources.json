@@ -7,7 +7,7 @@
     "host": "localhost",
     "port": 5432,
     "url": "",
-    "database": "food-api",
+    "database": "food_api",
     "password": "postgre",
     "name": "food_api",
     "user": "postgres",
