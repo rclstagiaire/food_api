@@ -68,12 +68,12 @@
     "restaurants": {
       "type": "belongsTo",
       "model": "restaurants",
-      "foreignKey": ""
+      "foreignKey": "id_restaurants"
     },
      "menu_item": {
       "type": "hasMany",
       "model": "menu_item",
-      "foreignKey": ""
+      "foreignKey": "id_menu_item"
     }
     
   },

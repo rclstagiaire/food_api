@@ -69,22 +69,22 @@
     "orders": {
       "type": "hasMany",
       "model": "orders",
-      "foreignkey": ""
+      "foreignkey": "id_orders"
     },
     "categories": {
       "type": "hasMany",
       "model": "categories",
-      "foreignkey": ""
+      "foreignkey": "id_categories"
     },
     "menus": {
       "type": "hasMany",
       "model": "menus",
-      "foreignKey": ""
+      "foreignKey": "id_menus"
     },
     "products": {
       "type": "hasMany",
       "model": "products",
-      "foreignKey": ""
+      "foreignKey": "id_products"
     }
   },
   "acls": [],

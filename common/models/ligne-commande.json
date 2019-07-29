@@ -25,12 +25,12 @@
     "products": {
       "type": "belongsTo",
       "model": "products",
-      "foreignkey": ""
+      "foreignkey": "id_products"
     },
     "orders": {
       "type": "belongsTo",
       "model": "orders",
-      "foreignkey": ""
+      "foreignkey": "id_orders"
     }
   },
   "acls": [],

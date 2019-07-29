@@ -26,12 +26,12 @@
       "products": {
         "type": "belongsTo",
         "model": "products",
-        "foreignKey": ""
+        "foreignKey": "id_products"
       },
       "menus": {
         "type": "belongsTo",
         "model": "menus",
-        "foreignKey": ""
+        "foreignKey": "id_menus"
       }
   },
   

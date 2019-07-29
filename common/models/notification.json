@@ -69,7 +69,7 @@
     "orders": {
       "type": "belongsTo",
       "model": "orders",
-      "foreignkey": ""
+      "foreignkey": "id-orders"
     }
   },
   "acls": [],

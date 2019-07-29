@@ -79,32 +79,32 @@
     "delivers": {
       "type": "belongsTo",
       "model": "delivers",
-      "foreignkey": ""
+      "foreignkey": "id_delivers"
     },
     "restaurants": {
       "type": "belongsTo",
       "model": "restaurants",
-      "foreignkey": ""
+      "foreignkey": "id_restaurants"
     },
     "payment_mode": {
       "type": "belongsTo",
       "model": "payment_mode",
-      "foreignkey": ""
+      "foreignkey": "id_payment_mode"
     },
     "ligne_commande": {
       "type": "hasMany",
       "model": "ligne_commande",
-      "foreignkey": ""
+      "foreignkey": "id_ligne_commande"
     },
     "notification": {
       "type": "hasMany",
       "model": "notification",
-      "foreignkey": ""
+      "foreignkey": "id_notification"
     },
     "customer": {
       "type": "belongsTo",
       "model": "customer",
-      "foreignkey": ""
+      "foreignkey": "id_customer"
     }
   },
   "acls": [],

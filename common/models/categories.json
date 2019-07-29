@@ -57,12 +57,12 @@
     "restaurants": {
       "type": "belongsTo",
       "model": "restaurants",
-      "foreignkey": ""
+      "foreignkey": "id_restaurants"
     },
     "products": {
       "type": "hasMany",
       "model": "products",
-      "foreignkey": ""
+      "foreignkey": "id_products"
     }
   },
   "acls": [],
