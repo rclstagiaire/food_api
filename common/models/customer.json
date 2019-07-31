@@ -23,7 +23,7 @@
       "type": "string",
       "required": true,
       "postgresql": {
-        "columnName": "firsname",
+        "columnName": "firstname",
         "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
@@ -69,7 +69,7 @@
     "orders": {
       "type": "hasMany",
       "model": "orders",
-      "foreignkey": ""
+      "foreignKey": ""
     }
   },
   "acls": [],

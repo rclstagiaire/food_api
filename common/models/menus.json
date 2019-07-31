@@ -19,7 +19,6 @@
         "nullable": "NO"
       }
     },
-
     "name": {
       "type": "string",
       "required": true,
@@ -65,24 +64,20 @@
   },
   "validations": [],
   "relations": {
-    "restaurants": {
-      "type": "belongsTo",
-      "model": "restaurants",
-      "foreignKey": ""
-    },
-    
-    "menu_item": {
-      "type": "hasMany",
-      "model": "menu_item",
-      "foreignKey": ""
-    },
     "products": {
       "type": "hasMany",
       "model": "products",
-      "foreignKey": ""
+      "foreignKey": "menusId",
+      "through": "menu_item"
+    },
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
-
-    
   },
   "acls": [],
   "methods": {}

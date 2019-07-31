@@ -90,7 +90,7 @@
     "orders": {
       "type": "hasMany",
       "model": "orders",
-      "foreignkey": ""
+      "foreignKey": ""
     }
   },
   "acls": [],
