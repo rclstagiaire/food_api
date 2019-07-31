@@ -78,5 +78,9 @@
   "payment_mode": {
     "dataSource": "food_api",
     "public": true
+  },
+  "ligne_restaurants_categories": {
+    "dataSource": "food_api",
+    "public": true
   }
 }
