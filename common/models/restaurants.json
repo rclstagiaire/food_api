@@ -70,9 +70,20 @@
       "model": "menus",
       "foreignKey": ""
     },
+    "categories": {
+      "type": "hasMany",
+      "model": "categories",
+      "foreignKey": "retaurantsId",
+      "through": "ligne_restaurants_categories"
+    },
     "products": {
       "type": "hasMany",
       "model": "products",
+      "foreignKey": ""
+  },
+    "orders": {
+      "type": "hasMany",
+      "model": "orders",
       "foreignKey": ""
     },
     "orders": {

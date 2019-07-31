@@ -100,16 +100,16 @@
         "nestRemoting": true
       }
     },
-    "notifications": {
-      "type": "hasMany",
-      "model": "notification",
-      "foreignKey": ""
-    },
     "products": {
       "type": "hasMany",
       "model": "products",
       "foreignKey": "ordersId",
       "through": "ligne_commande"
+    },
+    "notifications": {
+      "type": "hasMany",
+      "model": "notification",
+      "foreignKey": ""
     }
   },
   "acls": [],

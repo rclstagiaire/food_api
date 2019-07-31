@@ -61,19 +61,19 @@
       "foreignKey": "",
       "options": {
         "nestRemoting": true
-      },
-      "orders": {
-        "type": "hasMany",
-        "model": "orders",
-        "foreignKey": "productsId",
-        "through": "ligne_commande"
-      },
-      "menus": {
-        "type": "hasMany",
-        "model": "menus",
-        "foreignKey": "productsId",
-        "through": "menu_item"
       }
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "orders",
+      "foreignKey": "productsId",
+      "through": "ligne_commande"
+    },
+    "menus": {
+      "type": "hasMany",
+      "model": "menus",
+      "foreignKey": "productsId",
+      "through": "menu_item"
     },
     "restaurants": {
       "type": "belongsTo",

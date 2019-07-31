@@ -1,0 +1,44 @@
+{
+  "name": "ligne_restaurants_categories",
+  "plural": "ligne_restaurants_categories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_ligne_restaurants_categories": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_ligne_restaurants_categories",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "categories": {
+      "type": "belongsTo",
+      "model": "categories",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

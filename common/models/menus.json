@@ -64,18 +64,18 @@
   },
   "validations": [],
   "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "products",
+      "foreignKey": "menusId",
+      "through": "menu_item"
+    },
     "restaurants": {
       "type": "belongsTo",
       "model": "restaurants",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
-      },
-      "products": {
-        "type": "hasMany",
-        "model": "products",
-        "foreignKey": "menusId",
-        "through": "menu_item"
       }
     }
   },
