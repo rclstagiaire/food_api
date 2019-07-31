@@ -19,7 +19,6 @@
         "nullable": "NO"
       }
     },
-
     "name": {
       "type": "string",
       "required": true,
@@ -32,10 +31,10 @@
       }
     },
     "availability": {
-      "type": "date",
+      "type": "string",
       "postgresql": {
         "columnName": "availability",
-        "dataType": "DATE",
+        "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
@@ -66,25 +65,26 @@
   },
   "validations": [],
   "relations": {
-    "orders": {
-      "type": "hasMany",
-      "model": "orders",
-      "foreignkey": "id_orders"
-    },
-    "categories": {
-      "type": "hasMany",
-      "model": "categories",
-      "foreignkey": "id_categories"
-    },
     "menus": {
       "type": "hasMany",
       "model": "menus",
-      "foreignKey": "id_menus"
+      "foreignKey": ""
     },
     "products": {
       "type": "hasMany",
       "model": "products",
-      "foreignKey": "id_products"
+      "foreignKey": ""
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "orders",
+      "foreignKey": ""
+    },
+    "categories": {
+      "type": "hasMany",
+      "model": "categories",
+      "foreignKey": "restaurantsId",
+      "through": "ligne_restaurants_categories"
     }
   },
   "acls": [],

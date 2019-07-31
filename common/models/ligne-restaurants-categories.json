@@ -1,18 +1,18 @@
 {
-  "name": "ligne_commande",
-  "plural": "ligne_commande",
+  "name": "ligne_restaurants_categories",
+  "plural": "ligne_restaurants_categories",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id_ligne_commande": {
+    "id_ligne_restaurants_categories": {
       "type": "number",
       "id": true,
       "generated": true,
       "postgresql": {
-        "columnName": "id_ligne_commande",
+        "columnName": "id_ligne_restaurants_categories",
         "dataType": "bigint",
         "dataPrecision": null,
         "dataScale": null,
@@ -22,17 +22,17 @@
   },
   "validations": [],
   "relations": {
-    "orders": {
+    "categories": {
       "type": "belongsTo",
-      "model": "orders",
+      "model": "categories",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
       }
     },
-    "products": {
+    "restaurants": {
       "type": "belongsTo",
-      "model": "products",
+      "model": "restaurants",
       "foreignKey": "",
       "options": {
         "nestRemoting": true

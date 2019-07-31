@@ -54,15 +54,16 @@
   },
   "validations": [],
   "relations": {
-    "restaurants": {
-      "type": "belongsTo",
-      "model": "restaurants",
-      "foreignkey": "id_restaurants"
-    },
     "products": {
       "type": "hasMany",
       "model": "products",
-      "foreignkey": "id_products"
+      "foreignKey": ""
+    },
+    "restaurants": {
+      "type": "hasMany",
+      "model": "restaurants",
+      "foreignKey": "categoriesId",
+      "through": "ligne_restaurants_categories"
     }
   },
   "acls": [],

@@ -76,35 +76,40 @@
   },
   "validations": [],
   "relations": {
-    "delivers": {
-      "type": "belongsTo",
-      "model": "delivers",
-      "foreignkey": "id_delivers"
-    },
-    "restaurants": {
-      "type": "belongsTo",
-      "model": "restaurants",
-      "foreignkey": "id_restaurants"
-    },
-    "payment_mode": {
+    "paymentMode": {
       "type": "belongsTo",
       "model": "payment_mode",
-      "foreignkey": "id_payment_mode"
-    },
-    "ligne_commande": {
-      "type": "hasMany",
-      "model": "ligne_commande",
-      "foreignkey": "id_ligne_commande"
-    },
-    "notification": {
-      "type": "hasMany",
-      "model": "notification",
-      "foreignkey": "id_notification"
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     },
     "customer": {
       "type": "belongsTo",
       "model": "customer",
-      "foreignkey": "id_customer"
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "restaurants": {
+      "type": "belongsTo",
+      "model": "restaurants",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "notifications": {
+      "type": "hasMany",
+      "model": "notification",
+      "foreignKey": ""
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "products",
+      "foreignKey": "ordersId",
+      "through": "ligne_commande"
     }
   },
   "acls": [],

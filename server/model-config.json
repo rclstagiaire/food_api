@@ -47,36 +47,39 @@
     "dataSource": "food_api",
     "public": true
   },
-  
-    "categories": {
-      "dataSource": "food_api",
-      "public": true
-    },
-    "menus": {
-      "dataSource": "food_api",
-      "public": true
-    },
-    "products": {
-      "dataSource": "food_api",
-      "public": true
-    },
-    "restaurants": {
-      "dataSource": "food_api",
-      "public": true
-    },
-    "customer": {
-      "dataSource": "food_api",
-      "public": true
-    },
-    "menu_item": {
-      "dataSource": "food_api",
-      "public": true
-    },
-    "ligne_commande": {
-      "dataSource": "food_api",
-      "public": true
+  "categories": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "menus": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "products": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "restaurants": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "customer": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "menu_item": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "ligne_commande": {
+    "dataSource": "food_api",
+    "public": true
   },
   "payment_mode": {
+    "dataSource": "food_api",
+    "public": true
+  },
+  "ligne_restaurants_categories": {
     "dataSource": "food_api",
     "public": true
   }

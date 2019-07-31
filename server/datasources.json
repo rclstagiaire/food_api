@@ -1,3 +1,4 @@
+
 {
   "db": {
     "name": "db",
@@ -7,7 +8,7 @@
     "host": "localhost",
     "port": 5432,
     "url": "",
-    "database": "food_api",
+    "database": "food_api_test",
     "password": "postgre",
     "name": "food_api",
     "user": "postgres",

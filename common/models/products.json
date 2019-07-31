@@ -19,7 +19,6 @@
         "nullable": "NO"
       }
     },
-
     "name": {
       "type": "string",
       "required": true,
@@ -56,28 +55,34 @@
   },
   "validations": [],
   "relations": {
-    "ligne_commande": {
-      "type": "hasMany",
-      "model": "ligne_commande",
-      "foreignkey": ""
-    },
     "categories": {
-      "type": "belongsTo ",
+      "type": "belongsTo",
       "model": "categories",
-      "foreignkey": ""
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      },
+      "orders": {
+        "type": "hasMany",
+        "model": "orders",
+        "foreignKey": "productsId",
+        "through": "ligne_commande"
+      },
+      "menus": {
+        "type": "hasMany",
+        "model": "menus",
+        "foreignKey": "productsId",
+        "through": "menu_item"
+      }
     },
-    
     "restaurants": {
       "type": "belongsTo",
       "model": "restaurants",
-      "foreignKey": ""
-    },
-    "menu_item": {
-      "type": "hasMany",
-      "model": "menu_item",
-      "foreignKey": ""
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
-    
   },
   "acls": [],
   "methods": {}

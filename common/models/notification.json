@@ -69,7 +69,10 @@
     "orders": {
       "type": "belongsTo",
       "model": "orders",
-      "foreignkey": "id-orders"
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

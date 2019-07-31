@@ -6,35 +6,39 @@
   "options": {
     "validateUpsert": true
   },
-    "properties": {
-      "id_menu_item": {
-        "type": "number",
-        "id": true,
-        "generated": true,
-        "postgresql": {
-          "columnName": "id_menu_item",
-          "dataType": "bigint",
-          "dataPrecision": null,
-          "dataScale": null,
-          "nullable": "NO"
-        }
+  "properties": {
+    "id_menu_item": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_menu_item",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
       }
-  
-    },
-    "validations": [],
-    "relations": {
-      "products": {
-        "type": "belongsTo",
-        "model": "products",
-        "foreignKey": "id_products"
-      },
-      "menus": {
-        "type": "belongsTo",
-        "model": "menus",
-        "foreignKey": "id_menus"
-      }
+    }
   },
-  
+  "validations": [],
+  "relations": {
+    "menus": {
+      "type": "belongsTo",
+      "model": "menus",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "products": {
+      "type": "belongsTo",
+      "model": "products",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
