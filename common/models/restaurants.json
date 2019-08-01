@@ -85,19 +85,8 @@
       "type": "hasMany",
       "model": "orders",
       "foreignKey": ""
-    },
-    "orders": {
-      "type": "hasMany",
-      "model": "orders",
-      "foreignKey": ""
-    },
-    "categories": {
-      "type": "hasMany",
-      "model": "categories",
-      "foreignKey": "restaurantsId",
-      "through": "ligne_restaurants_categories"
     }
-  },
+    },
   "acls": [],
   "methods": {}
 }
