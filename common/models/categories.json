@@ -65,7 +65,6 @@
       "foreignKey": "categoriesId",
       "through": "ligne_restaurants_categories"
     }
-    
   },
   "acls": [],
   "methods": {}
