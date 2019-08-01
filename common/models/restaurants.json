@@ -80,7 +80,7 @@
       "type": "hasMany",
       "model": "products",
       "foreignKey": ""
-  },
+    },
     "orders": {
       "type": "hasMany",
       "model": "orders",
