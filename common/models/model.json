@@ -1,7 +1,0 @@
-{
-    "accessType": "EXECUTE",
-    "principalType": "ROLE",
-    "principalId": "superAdmin",
-    "permission": "ALLOW",
-    "property": "find"
-  }
