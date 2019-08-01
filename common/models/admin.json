@@ -7,6 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
+    "id_admin": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "postgresql": {
+        "columnName": "id_payment_mode",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
     "name": {
       "type": "string",
       "required": true
