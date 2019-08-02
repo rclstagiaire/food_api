@@ -18,7 +18,6 @@ var lbTables = [
   'ligne_commande',
   'payment_mode',
   'ligne_restaurants_categories'
-
 ];
 ds.autoupdate(lbTables, function(er) {
   if (er) throw er;

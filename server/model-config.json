@@ -14,18 +14,12 @@
     ]
   },
   "User": {
-    "dataSource": "food_api"
+    "dataSource": "food_api",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "food_api",
-    "public": false,
-    "relations": {
-      "user": {
-        "type": "belongsTo",
-        "model": "customer",
-        "foreignKey": ""
-      }
-    }
+    "public": false
   },
   "ACL": {
     "dataSource": "food_api",
@@ -87,10 +81,6 @@
     "public": true
   },
   "ligne_restaurants_categories": {
-    "dataSource": "food_api",
-    "public": true
-  },
-  "admin": {
     "dataSource": "food_api",
     "public": true
   }

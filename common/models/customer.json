@@ -7,6 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
+   
     "id_customer": {
       "type": "number",
       "id": true,
@@ -23,7 +24,7 @@
       "type": "string",
       "required": true,
       "postgresql": {
-        "columnName": "firstname",
+        "columnName": "firsname",
         "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
@@ -54,13 +55,13 @@
     },
     "password": {
       "type": "string",
-      "required": false,
+      "required": true,
       "postgresql": {
         "columnName": "password",
         "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "YES"
+        "nullable": "NO"
       }
     },
     "customer_position": {
@@ -82,15 +83,15 @@
       "model": "orders",
       "foreignKey": ""
     },
-      "accessTokens": {
-        "type": "hasMany",
-        "model": "AccessToken",
-        "foreignKey": "",
-        "options": {
-          "disableInclude": true
-        }
-  }
-},
+    "accessTokens": {
+      "type": "hasMany",
+      "model": "AccessToken",
+      "foreignKey": "",
+      "options": {
+        "disableInclude": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",
@@ -107,7 +108,7 @@
     {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     }
   ],

@@ -7,6 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
+    
     "id_delivers": {
       "type": "number",
       "id": true,
@@ -70,7 +71,7 @@
         "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "YES"
+        "nullable": "NO"
       }
     },
     "avaibility": {
