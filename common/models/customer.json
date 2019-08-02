@@ -1,7 +1,7 @@
 {
   "name": "customer",
   "plural": "customer",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -52,6 +52,17 @@
         "nullable": "NO"
       }
     },
+    "password": {
+      "type": "string",
+      "required": false,
+      "postgresql": {
+        "columnName": "password",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
     "customer_position": {
       "type": "geopoint",
       "required": false,
@@ -70,8 +81,35 @@
       "type": "hasMany",
       "model": "orders",
       "foreignKey": ""
+    },
+      "accessTokens": {
+        "type": "hasMany",
+        "model": "AccessToken",
+        "foreignKey": "",
+        "options": {
+          "disableInclude": true
+        }
+  }
+},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
     }
-  },
-  "acls": [],
+  ],
   "methods": {}
 }

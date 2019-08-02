@@ -12,7 +12,7 @@
       "id": true,
       "generated": true,
       "postgresql": {
-        "columnName": "id_payment_mode",
+        "columnName": "id_admin",
         "dataType": "bigint",
         "dataPrecision": null,
         "dataScale": null,
@@ -21,7 +21,14 @@
     },
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "text",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],

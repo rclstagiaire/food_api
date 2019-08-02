@@ -18,7 +18,14 @@
   },
   "AccessToken": {
     "dataSource": "food_api",
-    "public": false
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "customer",
+        "foreignKey": ""
+      }
+    }
   },
   "ACL": {
     "dataSource": "food_api",

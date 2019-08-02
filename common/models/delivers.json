@@ -1,7 +1,7 @@
 {
   "name": "delivers",
   "plural": "delivers",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -60,6 +60,17 @@
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
+      }
+    },
+    "password": {
+      "type": "string",
+      "required": false,
+      "postgresql": {
+        "columnName": "password",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
       }
     },
     "avaibility": {
