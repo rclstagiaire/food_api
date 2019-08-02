@@ -1,12 +1,13 @@
 {
   "name": "delivers",
   "plural": "delivers",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    
     "id_delivers": {
       "type": "number",
       "id": true,
@@ -56,6 +57,17 @@
       "required": true,
       "postgresql": {
         "columnName": "email",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "password": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "password",
         "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,

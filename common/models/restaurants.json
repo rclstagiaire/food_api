@@ -86,7 +86,7 @@
       "model": "orders",
       "foreignKey": ""
     }
-    },
+  },
   "acls": [],
   "methods": {}
 }

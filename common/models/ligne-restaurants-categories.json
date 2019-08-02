@@ -22,17 +22,17 @@
   },
   "validations": [],
   "relations": {
-    "restaurants": {
+    "categories": {
       "type": "belongsTo",
-      "model": "restaurants",
+      "model": "categories",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
       }
     },
-    "categories": {
+    "restaurants": {
       "type": "belongsTo",
-      "model": "categories",
+      "model": "restaurants",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
