@@ -42,17 +42,7 @@
         "nullable": "NO"
       }
     },
-    "email": {
-      "type": "string",
-      "required": true,
-      "postgresql": {
-        "columnName": "email",
-        "dataType": "TEXT",
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
+
     "password": {
       "type": "string",
       "required": true,
@@ -82,21 +72,13 @@
       "type": "hasMany",
       "model": "orders",
       "foreignKey": ""
-    },
-    "accessTokens": {
-      "type": "hasMany",
-      "model": "AccessToken",
-      "foreignKey": "",
-      "options": {
-        "disableInclude": true
-      }
     }
   },
   "acls": [
     {
       "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$authenticated",
+      "principalId": "admin",
       "permission": "ALLOW"
     },
     {
@@ -106,9 +88,9 @@
       "permission": "DENY"
     },
     {
-      "accessType": "READ",
+      "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$authenticated",
+      "principalId": "$owner",
       "permission": "ALLOW"
     }
   ],

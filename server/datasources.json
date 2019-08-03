@@ -1,4 +1,4 @@
-{
+  {
   "food_api": {
     "host": "localhost",
     "port": 5432,

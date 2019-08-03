@@ -2,7 +2,7 @@
   "name": "delivers",
   "plural": "delivers",
   "base": "User",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
@@ -52,17 +52,7 @@
         "nullable": "YES"
       }
     },
-    "email": {
-      "type": "string",
-      "required": true,
-      "postgresql": {
-        "columnName": "email",
-        "dataType": "TEXT",
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
+
     "password": {
       "type": "string",
       "required": true,
@@ -105,6 +95,31 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+],
   "methods": {}
 }

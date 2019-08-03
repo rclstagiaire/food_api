@@ -66,6 +66,19 @@
       "through": "ligne_restaurants_categories"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "USER",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
