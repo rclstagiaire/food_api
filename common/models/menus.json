@@ -81,10 +81,22 @@
   },
   "acls": [
     {
+      "accessType": "*",
+      "principalType": "USER",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$authenticated",
+      "principalId": "$everyone",
       "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
     }
   ],
   "methods": {}
