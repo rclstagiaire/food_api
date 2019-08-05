@@ -90,7 +90,7 @@
   "acls": [
     {
       "accessType": "*",
-      "principalType": "USER",
+      "principalType": "ROLE",
       "principalId": "admin",
       "permission": "ALLOW"
     },
