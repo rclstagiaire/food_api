@@ -30,6 +30,17 @@
         "nullable": "NO"
       }
     },
+    "note": {
+      "type": "number",
+      "required": false,
+      "postgresql": {
+        "columnName": "note",
+        "dataType": "bigint",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
     "availability": {
       "type": "string",
       "postgresql": {
