@@ -78,7 +78,11 @@
   "acls": [
     {
       "accessType": "*",
+<<<<<<< HEAD
       "principalType": "ROLE",
+=======
+      "principalType": "USER",
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
       "principalId": "admin",
       "permission": "ALLOW"
     },
@@ -91,7 +95,11 @@
     {
       "accessType": "READ",
       "principalType": "ROLE",
+<<<<<<< HEAD
       "principalId": "$authentificated",
+=======
+      "principalId": "$authenticated",
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
       "permission": "ALLOW"
     }
   ],

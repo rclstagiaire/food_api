@@ -2,7 +2,7 @@
   "name": "delivers",
   "plural": "delivers",
   "base": "User",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
@@ -53,7 +53,21 @@
         "nullable": "YES"
       }
     },
+<<<<<<< HEAD
    
+=======
+    "phone_number": {
+      "type": "number",
+      "postgresql": {
+        "columnName": "phone_number",
+        "dataType": "double precision",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     "password": {
       "type": "string",
       "required": true,
@@ -97,6 +111,7 @@
     }
   },
   "acls": [
+<<<<<<< HEAD
     
     {
       "accessType": "*",
@@ -104,6 +119,8 @@
       "principalId": "admin",
       "permission": "ALLOW"
     },
+=======
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     {
       "accessType": "*",
       "principalType": "ROLE",
@@ -111,19 +128,40 @@
       "permission": "DENY"
     },
     {
+<<<<<<< HEAD
       "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$owner",
       "permission": "ALLOW"
     },
+=======
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     {
       "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW"
+<<<<<<< HEAD
     }
     
    
   ],
+=======
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+    
+],
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
   "methods": {}
 }

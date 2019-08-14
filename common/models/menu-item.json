@@ -43,6 +43,7 @@
     {
       "accessType": "*",
       "principalType": "ROLE",
+<<<<<<< HEAD
       "principalId": "$admin",
       "permission": "ALLOW"
     },
@@ -57,6 +58,22 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW"
+=======
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     }
   ],
   "methods": {}

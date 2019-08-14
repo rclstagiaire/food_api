@@ -70,14 +70,24 @@
     {
       "accessType": "*",
       "principalType": "ROLE",
+<<<<<<< HEAD
       "principalId": "admin",
       "permission": "ALLOW"
+=======
+      "principalId": "$everyone",
+      "permission": "DENY"
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     },
     {
       "accessType": "*",
       "principalType": "ROLE",
+<<<<<<< HEAD
       "principalId": "$everyone",
       "permission": "DENY"
+=======
+      "principalId": "admin",
+      "permission": "ALLOW"
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     },
     {
       "accessType": "READ",
@@ -85,6 +95,11 @@
       "principalId": "$everyone",
       "permission": "ALLOW"
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
   ],
   "methods": {}
 }
+ 

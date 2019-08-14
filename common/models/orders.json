@@ -124,6 +124,15 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     }
   ],
   "methods": {}

@@ -17,9 +17,15 @@
     "dataSource": "food_api",
     "public": true
   },
+<<<<<<< HEAD
   "AccessToken": {
     "dataSource": "food_api",
     "public": false
+=======
+      "AccessToken": {
+      "dataSource": "food_api",
+      "public": false
+>>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
   },
   "ACL": {
     "dataSource": "food_api",
