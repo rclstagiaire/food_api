@@ -18,8 +18,19 @@
         "dataScale": null,
         "nullable": "NO"
       }
+    },
+    "quantity_products": {
+      "type": "number",
+      "postgresql": {
+        "columnName": "quantity_products",
+        "dataType": "double precision",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
+
   "validations": [],
   "relations": {
     "orders": {
@@ -39,6 +50,23 @@
       }
     }
   },
-  "acls": [],
+  "acls": [{
+    "accessType": "*",
+    "principalType": "ROLE",
+    "principalId": "$admin",
+    "permission": "ALLOW"
+  },
+  {
+    "accessType": "*",
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "DENY"
+  },
+  {
+    "accessType": "READ",
+    "principalType": "ROLE",
+    "principalId": "$authentified",
+    "permission": "ALLOW"
+  }],
   "methods": {}
 }

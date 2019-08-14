@@ -1,7 +1,7 @@
 {
   "name": "restaurants",
   "plural": "restaurants",
-  "base": "user",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -28,17 +28,6 @@
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
-      }
-    },
-    "password": {
-      "type": "string",
-      "required": false,
-      "postgresql": {
-        "columnName": "password",
-        "dataType": "TEXT",
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
       }
     },
     "availability": {
@@ -72,6 +61,17 @@
         "dataScale": null,
         "nullable": "NO"
       }
+    },
+    "note": {
+      "type": "number",
+      "required": false,
+      "postgresql": {
+        "columnName": "note",
+        "dataType": "double precision",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
     }
   },
   "validations": [],
@@ -98,6 +98,25 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

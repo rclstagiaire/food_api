@@ -44,28 +44,19 @@
     },
     "note": {
       "type": "number",
+      "required": false,
       "postgresql": {
         "columnName": "note",
-        "dataType": "bigint",
+        "dataType": "double precision",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
       }
     },
-    "email": {
-      "type": "string",
-      "required": true,
-      "postgresql": {
-        "columnName": "email",
-        "dataType": "TEXT",
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
+   
     "password": {
       "type": "string",
-      "required": false,
+      "required": true,
       "postgresql": {
         "columnName": "password",
         "dataType": "TEXT",
@@ -105,6 +96,34 @@
       "foreignKey": ""
     }
   },
-  "acls": [],
+  "acls": [
+    
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+    
+   
+  ],
   "methods": {}
 }

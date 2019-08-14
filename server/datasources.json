@@ -7,6 +7,6 @@
     "password": "1234soleil",
     "name": "food_api",
     "user": "postgres",
-    "connector": "postgresql "
+    "connector": "postgresql"
   }
 }
