@@ -54,6 +54,16 @@
         "nullable": "NO"
       }
     },
+    "phone_number": {
+      "type": "number",
+      "postgresql": {
+        "columnName": "phone_number",
+        "dataType": "double precision",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
     "customer_position": {
       "type": "geopoint",
       "required": false,

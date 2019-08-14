@@ -35,9 +35,9 @@
       "required": false,
       "postgresql": {
         "columnName": "note",
-        "dataType": "bigint",
+        "dataType": "double precision",
         "dataPrecision": null,
-        "dataScale": null,
+        "dataScale": null, 
         "nullable": "YES"
       }
     },

@@ -18,6 +18,16 @@
         "dataScale": null,
         "nullable": "NO"
       }
+    },
+    "quantity_products": {
+      "type": "number",
+      "postgresql": {
+        "columnName": "quantity_products",
+        "dataType": "double precision",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
     }
   },
   "validations": [],

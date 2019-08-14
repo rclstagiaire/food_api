@@ -24,7 +24,7 @@
       "required": true,
       "postgresql": {
         "columnName": "amount",
-        "dataType": "integer",
+        "dataType": "double precision",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"

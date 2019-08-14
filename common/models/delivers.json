@@ -46,10 +46,20 @@
       "type": "number",
       "postgresql": {
         "columnName": "note",
-        "dataType": "bigint",
+        "dataType": "double precision",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
+      }
+    },
+    "phone_number": {
+      "type": "number",
+      "postgresql": {
+        "columnName": "phone_number",
+        "dataType": "double precision",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
       }
     },
 

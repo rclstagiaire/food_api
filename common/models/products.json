@@ -35,7 +35,7 @@
       "required": true,
       "postgresql": {
         "columnName": "price",
-        "dataType": "bigint",
+        "dataType": "double precision",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
@@ -50,6 +50,17 @@
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
+      }
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "postgresql": {
+        "columnName": "description",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
       }
     }
   },
