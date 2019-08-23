@@ -55,10 +55,10 @@
       }
     },
     "phone_number": {
-      "type": "number",
+      "type": "string",
       "postgresql": {
         "columnName": "phone_number",
-        "dataType": "double precision",
+        "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
@@ -70,6 +70,39 @@
       "postgresql": {
         "columnName": "customer_position",
         "dataType": "POINT",
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "ville": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "ville",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null, 
+        "nullable": "NO"
+      }
+    },
+    "date_creation": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "date_creation",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null, 
+        "nullable": "NO"
+      }
+    },
+    "image": {
+      "type": "string",
+      "required": false,
+      "postgresql": {
+        "columnName": "image",
+        "dataType": "TEXT",
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
