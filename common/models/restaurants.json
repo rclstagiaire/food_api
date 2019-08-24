@@ -63,6 +63,7 @@
         "nullable": "NO"
       }
     },
+<<<<<<< HEAD
     "note": {
       "type": "number",
       "required": false,
@@ -72,6 +73,28 @@
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "YES"
+=======
+    "ville": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "ville",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null, 
+        "nullable": "NO"
+      }
+    },
+    "date_creation": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "date_creation",
+        "dataType": "TEXT",
+        "dataPrecision": null,
+        "dataScale": null, 
+        "nullable": "NO"
+>>>>>>> db5adee98ff4e997e5f6e2b09cbb27fc828afadd
       }
     }
   },
