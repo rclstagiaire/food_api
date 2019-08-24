@@ -30,17 +30,7 @@
         "nullable": "NO"
       }
     },
-    "note": {
-      "type": "number",
-      "required": false,
-      "postgresql": {
-        "columnName": "note",
-        "dataType": "double precision",
-        "dataPrecision": null,
-        "dataScale": null, 
-        "nullable": "YES"
-      }
-    },
+   
     "availability": {
       "type": "string",
       "postgresql": {
@@ -117,7 +107,6 @@
       "permission": "ALLOW"
     },
     {
-<<<<<<< HEAD
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
@@ -128,18 +117,6 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW"
-=======
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
->>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
     }
   ],
   "methods": {}

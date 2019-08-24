@@ -42,29 +42,12 @@
         "nullable": "NO"
       }
     },
-<<<<<<< HEAD
     
-    "password": {
-      "type": "string",
-      "required": true,
-=======
-
     "password": {
       "type": "string",
       "required": true,
       "postgresql": {
         "columnName": "password",
-        "dataType": "TEXT",
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "phone_number": {
-      "type": "number",
->>>>>>> f9fc9fe702be3e08ce1496366cb9e511ce372437
-      "postgresql": {
-        "columnName": "phone_number",
         "dataType": "double precision",
         "dataPrecision": null,
         "dataScale": null,
